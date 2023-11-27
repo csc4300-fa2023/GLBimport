@@ -80,15 +80,12 @@
         const ambLight = new THREE.AmbientLight(ambColor, ambIntensity);
         scene.add(ambLight);
 
-        // Step 2.1: add a directional light to shine in the direction the camera faces
-        // DirectionalLight (color, intensity)
+        // DirectionalLight (color, intensity) attached to camera 
         eyeLight = new THREE.DirectionalLight( "white", 0.8 );   
         eyeLight.position.set(camera.position.x,camera.position.y,camera.position.z);  // shines down the z-axis
         scene.add(eyeLight);
 
-
-        // Step 2.2: add a dim light shining from above
-        // DirectionalLight (color, intensity)
+        // DirectionalLight (color, intensity) - dim light shining from above
         var topLight = new THREE.DirectionalLight( "white", 0.8 ); 
         topLight.position.set(0,1,0);
         scene.add( topLight );
