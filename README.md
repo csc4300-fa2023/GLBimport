@@ -1,3 +1,3 @@
-# GLTF import
+# GLTF/GLB import
 
-A simple example of how to import a new object in Three.js. 
+A simple example of how to import a new .GLB object in Three.js. 
